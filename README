@@ -1,0 +1,8 @@
+Functions:
+ 
+：      Access the properties files easier
+：      Organize properties files to a tree
+：      Add/Rename/Delete key to properties files
+：      Search properties file by key/value
+：      Import properties/excel to current properties files
+：      Export current properties files to properties/excel
