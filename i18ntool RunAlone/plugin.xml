@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         name="i18nTool"
+         point="org.eclipse.core.runtime.applications">
+      <application
+            icon="icons/main.PNG"
+            visible="true">
+         <run
+               class="i18ntool.I18nToolApplication">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Perspective"
+            class="i18ntool.Perspective"
+            id="i18nTool.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+
+      <view
+            class="i18ntool.view.ExplorerView"
+            icon="icons/inher_co.gif"
+            id="i18ntool.view.ExplorerView"
+            name="ExplorerView"
+            restorable="true">
+      </view>
+
+      <view
+            category="org.eclipse.ui"
+            class="org.eclipse.ui.ExtensionFactory:progressView"
+            icon="icons/pview.gif"
+            id="org.eclipse.ui.views.ProgressView"
+            name="Progress View">
+      </view>
+      <view
+            class="i18ntool.view.SearchView"
+            icon="icons/searchres.gif"
+            id="i18ntool.view.SearchView"
+            name="SearchView"
+            restorable="true">
+      </view>
+
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="i18ntool.editor.TreeNodeEditor"
+            default="false"
+            icon="icons/sourceEditor.gif"
+            id="i18ntool.editor.TreeNodeEditor"
+            name="TreeNodeEditor">
+      </editor>
+      <editor
+            class="i18ntool.editor.GeneralEditor"
+            default="false"
+            icon="icons/editor_area.gif"
+            id="i18ntool.editor.GeneralEditor"
+            name="GeneralEditor">
+      </editor>
+   </extension>
+   <extension
+         id="product"
+         name="i18nTool"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="i18nTool.application"
+            description="i18nTool"
+            name="i18nTool">
+         <property
+               name="appName"
+               value="i18nTool">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/1616.GIF,icons/3232.GIF,icons/4848.GIF">
+         </property>
+      </product>
+   </extension>
+
+</plugin>

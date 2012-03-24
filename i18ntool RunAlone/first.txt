@@ -1,0 +1,12 @@
+modify isDeploy to true | false in i18ntool.util.SystemResource,
+
+true it will deploy the source and it can run it in deployment
+false it will run in development environment.
+
+if there is some file that you cant run
+pls change @SuppressWarnings("rawtypes")
+to @SuppressWarnings("unchecked")
+
+if you are runing in the x86_64 eclipse
+pls change the file i18nToolx86_64.product
+to i18nTool.product to replace the original i18nTool.product

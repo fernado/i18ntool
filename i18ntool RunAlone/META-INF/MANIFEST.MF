@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: I18nTool 1.0.3
+Bundle-SymbolicName: i18nTool;singleton:=true
+Bundle-Version: 1.0.3
+Bundle-Activator: i18ntool.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources;bundle-version="3.5.0"
+Bundle-ActivationPolicy: lazy
+Bundle-ClassPath: .,
+ lib/poi-3.0.1-FINAL-20070705.jar,
+ lib/chardet.jar
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
